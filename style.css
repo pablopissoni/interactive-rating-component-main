@@ -1,0 +1,142 @@
+:root {
+    /* ### Primary */
+    --Orange: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+
+    --Medium-Grey-fix: hsl(213, 19%, 23%);
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    color: aliceblue;
+    font-family: 'Overpass', sans-serif;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.star_score,
+.thanks {
+    max-width: 340px;
+    min-width: 210px;
+    height: 340px;
+    padding: 30px;
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+}
+
+.star_score img {
+    width: 20px;
+    padding: 15px;
+    /* background-color: var(--Medium-Grey); */
+    background-color: var(--Medium-Grey-fix);
+    border-radius: 100%;
+}
+
+.star_score h2 {
+    margin-bottom: 10px;
+}
+
+.star_score p {
+    color: var(--Medium-Grey);
+    font-size: 16px;
+    margin: 12px 0px;
+    line-height: 1.4;
+}
+
+.button_container {
+    display: flex;
+    justify-content: space-between;
+    /* width: 50px; */
+    height: 50px;
+    margin: 35px 0px;
+}
+
+.button_container button {
+    width: 50px;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--Medium-Grey-fix);
+    color: var(--White);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button_container button:hover {
+    background-color: var(--Orange);
+}
+
+.button-submit {
+    /* border: 1px solid red; */
+    font-family: 'Overpass', sans-serif;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: var(--White);
+    background-color: var(--Orange);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-submit:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+.button-submit:active {
+    background-color: hsl(25, 97%, 70%);
+}
+
+.star_score {
+    display: none;
+}
+
+ /* --- SECOND CARD --- */
+.thanks {
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.thanks img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.thanks h4 {
+    font-weight: 400;
+    background-color: var(--Medium-Grey-fix);
+    color: var(--Orange);
+    padding: 5px 15px;
+    margin: 15px 5px;
+    border-radius: 40px;
+}
+.thanks h2 {
+    font-weight: 700;
+    margin: 15px 5px;
+}
+.thanks p{
+    margin: 10px 5px;
+    color: var(--Light-Grey);
+    text-align: center;
+}
+.attribution {
+    margin-top: 40px;
+}
