@@ -30,11 +30,11 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-    </style>
+      </style>
   </head>
   <body>
     <div class="article">
-      <div class="star_score">
+      <section class="star_score" id="form_component">
         <img src="./images/icon-star.svg" alt="Star" />
 
         <h2>How did we do?</h2>
@@ -53,15 +53,20 @@
           <button>5</button>
         </div>
 
-        <button class="button-submit">SUBMIT</button>
-      </div>
+        <button 
+          id="submit_button" 
+          class="button-submit"
+          >
+          SUBMIT
+        </button>
+      </section>
 
-      <div class="thanks">
+      <div class="thanks" id="thanks_component">
         <!-- Rating state end -->
         <img src="./images/illustration-thank-you.svg" alt="image thanks" />
 
         <!-- Add rating here -->
-        <h4>You selected X out of 5</h4>
+        <h4>You selected <span class="selected-score">Error</span> out of 5</h4>
         <!-- Thank you state start -->
         <h2>Thank you!</h2>
 
@@ -79,5 +84,6 @@
         >. Coded by <a href="#">Pablo Pissoni</a>.
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>

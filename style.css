@@ -40,7 +40,6 @@ body {
 .star_score img {
     width: 20px;
     padding: 15px;
-    /* background-color: var(--Medium-Grey); */
     background-color: var(--Medium-Grey-fix);
     border-radius: 100%;
 }
@@ -59,7 +58,6 @@ body {
 .button_container {
     display: flex;
     justify-content: space-between;
-    /* width: 50px; */
     height: 50px;
     margin: 35px 0px;
 }
@@ -75,11 +73,14 @@ body {
 }
 
 .button_container button:hover {
+    background-color: var(--Light-Grey);
+}
+.button_container button:focus {
     background-color: var(--Orange);
+    color: var(--White);
 }
 
 .button-submit {
-    /* border: 1px solid red; */
     font-family: 'Overpass', sans-serif;
     height: 50px;
     border-radius: 40px;
@@ -92,7 +93,6 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 .button-submit:hover {
     color: var(--Orange);
     background-color: var(--White);
@@ -101,15 +101,14 @@ body {
 .button-submit:active {
     background-color: hsl(25, 97%, 70%);
 }
-
-.star_score {
-    display: none;
+.button-submit:disabled {
+    background-color: hsl(25, 21%, 42%);
+    cursor: not-allowed;
 }
 
  /* --- SECOND CARD --- */
 .thanks {
-    display: flex;
-    /* display: none; */
+    display: none;
     flex-direction: column;
     align-items: center;
     
